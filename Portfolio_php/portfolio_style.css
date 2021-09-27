@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Raleway:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.title_position a {
+	padding-top: 2rem;
+	margin-left: 3rem;
+	list-style: none;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;	
+}
+
+a:hover {
+	color: rgb(252, 30, 30);
+}
+
+.header {
+	position: relative;
+	z-index: 10;
+}
+
+nav {
+	background: rgb(0, 0, 0);
+}
+
+#css_link_nav {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.3em;
+}
+
+#css_link_nav:hover {
+	color: rgb(252, 30, 30);
+}
+
+/* Code css pour ma fonction JavaScript du scroll de la nav_bar = .fixed */
+.fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.background {
+	background: url(assets/image_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.45);
+}
+
+.lien_span {
+	padding: 4.5rem;
+}
+
+.margin_title {
+	margin-top: 3rem;
+}
+
+/* .title / .anim_title / @keyframes typewriter / @keyframes blinkTextCursor et 
+.typing sont les classes pour l'animation de mon titre h1 "Bonjour,"*/
+.title {
+	color: rgb(255, 255, 255);
+	font-size: 4em;
+	font-family: 'Raleway', sans-serif;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    overflow: hidden;    
+}
+
+.anim_title {
+	animation: typewriter 1s steps(44) 1s 1 normal both,
+			   blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+	from{width: 0em;}
+	to{width: 4em;}
+}
+
+@keyframes blinkTextCursor {
+	from{border-right-color: rgb(255, 255, 255);}
+	to{border-right-color: transparent;}
+}
+
+.margin_typing {
+	margin-top: 2rem;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: 'Raleway', sans-serif;
+	color: rgb(255, 255, 255);
+}
+
+.text_nav_left li {
+	animation: type 4s steps(50);
+	overflow: hidden;
+	white-space: nowrap;
+	width: 14ch;
+}
+
+@keyframes type {
+	0% {
+		width: 0ch;
+	}
+	100% {
+		width: 14ch;
+	}
+}
+
+.text_nav_left img {
+	margin-left: 0.5rem;
+}
+
+.main_background {
+	background-image:
+		linear-gradient(297deg, transparent 0%, transparent 34%,
+			rgba(103,103,103, 0.02) 34%,
+			rgba(103,103,103, 0.02) 53%,transparent 53%, transparent 100%),
+
+		linear-gradient(222deg, transparent 0%, transparent 30%,
+			rgba(8, 8, 8,0.02) 30%, 
+			rgba(8, 8, 8,0.02) 58%,transparent 58%, transparent 100%),
+			
+		linear-gradient(352deg, transparent 0%, transparent 25%,
+			rgba(88, 88, 88,0.02) 25%, 
+			rgba(88, 88, 88,0.02) 57%,transparent 57%, transparent 100%),
+
+		linear-gradient(90deg, 
+			rgb(255,255,255),
+			rgb(255,255,255));
+}
+
+.title_main h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.presentation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5rem;
+}
+
+.presentation p {
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+#mail {
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Dosis', sans-serif;
+	color: rgb(0, 0, 0);
+}
+
+#mail:hover {
+	color: rgb(252, 30, 30);
+}
+
+.competences {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 1rem;
+}
+
+.progress {
+	margin: 15px;
+	width: 80%;
+}
+
+.logo_progress {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.html {
+	background-color: #fd7e14;
+	color: rgb(255, 255, 255);
+}
+
+.bootstrap {
+	background-color: #6610f2;
+	color: rgb(255, 255, 255);
+}
+
+.sass {
+	background-color: #d63384;
+	color: rgb(255, 255, 255);
+}
+
+.wordpress {
+	background-color: #318CE7;
+	color: rgb(255, 255, 255);
+}
+
+.mysql {
+	background-color: #20c997;
+	color: rgb(255, 255, 255);
+}
+
+.php {
+	background-color: #504499;
+	color: rgb(255, 255, 255);
+}
+
+.button_projet {
+	text-align: center;
+	padding: 1rem;
+}
+
+.line_projet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.column_projet {
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 1rem;
+}
+
+/* Désoler pour la répétition */
+
+.image_back_1 {
+	background-image: url(assets/html_css_1.jpg);
+}
+
+.image_back_2 {
+	background-image: url(assets/html_css_2.jpg);
+}
+
+.image_back_3 {
+	background-image: url(assets/html_css_3.jpg);
+}
+
+.image_back_4 {
+	background-image: url(assets/bootstrap_1.jpg);
+}
+
+.image_back_5 {
+	background-image: url(assets/bootstrap_2.jpg);
+}
+
+.image_back_6 {
+	background-image: url(assets/java_script_1.jpg);
+}
+
+.image_back_7 {
+	background-image: url(assets/java_script_2.jpg);
+}
+
+.image_back_8 {
+	background-image: url(assets/java_script_3.jpg);
+}
+
+.image_back_9 {
+	background-image: url(assets/php_1.jpg);
+}
+
+.image_back_10 {
+	background-image: url(assets/php_2.jpg);
+}
+
+.image_back_11 {
+	background-image: url(assets/symfony_1.jpg);
+}
+
+.image_back_12 {
+	background-image: url(assets/symfony_2.jpg);
+}
+
+.image_back_13 {
+	background-image: url(assets/img_3.jpg);
+}
+
+.overlay_card_projet {
+	background-color: rgba(255, 255, 255, 0.60);
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.column_projet:hover .overlay_card_projet {
+	-webkit-transform: scale(1);
+  	-ms-transform: scale(1);
+  	transform: scale(1);
+}
+
+#text a {
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Dosis', sans-serif;
+	color: black;
+	font-size: 17px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.contact_text {
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+label {
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.2em;
+}
+
+button:hover {
+	transform: scale(1.2, 1.2);
+}
+
+footer {
+	margin-top: -2rem;
+	margin-right: 3rem;
+	margin-left: 3rem;
+}
+
+.copyright {
+    margin-top: 1rem;
+}
+
+.text_footer p {
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.2em;
+}
+
+.text_typing_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+	font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+}
+
+.type_footer {
+	display: inline-flex;
+}
+  
+.type_footer span {
+	word-break: break-all;
+	height: 1.2em;
+	width: 0%;
+	height: 8vh;
+	overflow: hidden;
+	animation: t 2s linear infinite alternate;
+}
+
+.type_footer span:before {
+	display: inline-block;
+}
+  
+@keyframes t {
+	90%,
+	100% {
+		width: 100%;
+	}
+}
+
+.responsive_768px {
+	display: none;
+}
+
+.logo_footer p {
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.logo a {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+    margin: 1rem;
+}
+
+/* CODE CSS DE LE BOUTTON EN SCROLL TOP */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 17px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.text_nav_left {
+		display: none;
+	}
+
+	.presentation {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.table_responsive {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		width: 100%;
+	}
+
+	.text_presentation {
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	.none_img_code {
+		display: none;
+	}
+
+	.progress_responsive {
+		text-align: center;
+		width: 70%;
+	}
+
+	.responsive_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .copyright {
+        width: auto;
+    }
+
+    .text_typing {
+        width: auto;
+        margin-top: 2rem;
+    }
+
+    .logo_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+    }
+
+	.text_typing_footer {
+		width: 100%;
+		margin-top: 2.5rem;
+	}
+	
+}
+
+@media all and (max-width: 992px) {
+
+	.text_nav_left {
+		display: block;
+		margin-right: -1.5rem;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.margin_typing {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		text-align: center;
+	}
+
+	.progress {
+		width: 75%;
+	}
+
+	.btn {
+		margin: 0.5rem;	
+	}
+
+	.container_contact {
+		width: 60%;
+		margin: auto;
+	}
+
+	.typing_footer p {
+		text-align: center;
+	}
+
+	.type_footer {
+		display: none;
+	}
+
+	.responsive_768px {
+		display: block;
+		text-align: center;
+	}
+	
+}

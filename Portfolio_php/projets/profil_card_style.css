@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Raleway:wght@300&display=swap');
+
+body {
+	background-attachment: fixed;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+  	min-height: 100vh;
+  	margin: 0;
+}
+
+.bloc {
+	background-image: linear-gradient(40deg, white, #A9A9A9);
+	border: 2px solid rgb(211, 211, 211);
+	box-shadow: 10px 10px 20px; 
+	max-width: 400px;
+	max-height: 400px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	font-size: 0.8em;
+	font-family: 'Dosis', sans-serif;
+}
+
+.titre {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.4em;
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+.photo_profil {
+	display: block;
+	margin: auto;
+}
+
+.photo_profil:hover {
+	transform: scale(1.5);
+}
+
+h3 {
+	font-size: 1.1em;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.junior {
+	font-size: 1.1em;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	border: 1px black solid;
+	border-radius: 14px;
+	margin-right: 165px;
+	margin-left: 165px;
+	padding: 5px;
+	background-color: black;
+	color: white;
+}
+
+footer {
+	font-size: 1.0em;
+	font-family: 'Dosis', sans-serif;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+	transition: 1.5s;
+	color: black;
+}
+
+a:hover {
+	color: rgb(252, 30, 30);
+}
